@@ -18,6 +18,9 @@
 		4A2F9BD11F3C2A5900C6BF11 /* GameMasterScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BD01F3C2A5900C6BF11 /* GameMasterScannerTests.swift */; };
 		4A2F9BD31F3CB09E00C6BF11 /* ItemTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BD21F3CB09E00C6BF11 /* ItemTemplate.swift */; };
 		4A2F9BD41F3CB09E00C6BF11 /* ItemTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BD21F3CB09E00C6BF11 /* ItemTemplate.swift */; };
+		4A3407271F4D0A8A00A30AE7 /* TypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3407261F4D0A8A00A30AE7 /* TypeParser.swift */; };
+		4A3407281F4D0A8A00A30AE7 /* TypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3407261F4D0A8A00A30AE7 /* TypeParser.swift */; };
+		4A34072A1F4DDA5E00A30AE7 /* TypeParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3407291F4DDA5E00A30AE7 /* TypeParserTests.swift */; };
 		4A88CC411F3B61240008FB59 /* TemplateIDParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF251D01F3AD07600024E91 /* TemplateIDParser.swift */; };
 		4A88CC441F3B61960008FB59 /* TemplateIDParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88CC431F3B61960008FB59 /* TemplateIDParserTests.swift */; };
 		4A88CC451F3B63DF0008FB59 /* ItemTemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF251CE1F3AC3DE00024E91 /* ItemTemplateParser.swift */; };
@@ -53,6 +56,8 @@
 		4A2F9BC91F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTemplateParserTests.swift; sourceTree = "<group>"; };
 		4A2F9BD01F3C2A5900C6BF11 /* GameMasterScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMasterScannerTests.swift; sourceTree = "<group>"; };
 		4A2F9BD21F3CB09E00C6BF11 /* ItemTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTemplate.swift; sourceTree = "<group>"; };
+		4A3407261F4D0A8A00A30AE7 /* TypeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeParser.swift; sourceTree = "<group>"; };
+		4A3407291F4DDA5E00A30AE7 /* TypeParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeParserTests.swift; sourceTree = "<group>"; };
 		4A6057CD1F37DE58005EF5A3 /* GameMasterScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMasterScanner.swift; sourceTree = "<group>"; };
 		4A88CC431F3B61960008FB59 /* TemplateIDParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateIDParserTests.swift; sourceTree = "<group>"; };
 		4A950D191F33F1C000C7498F /* Pokemon_GO_Simulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pokemon_GO_Simulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +105,7 @@
 				4AF251CE1F3AC3DE00024E91 /* ItemTemplateParser.swift */,
 				4A2F9BC61F3C1A9C00C6BF11 /* PokemonTemplateParser.swift */,
 				4AF251D01F3AD07600024E91 /* TemplateIDParser.swift */,
+				4A3407261F4D0A8A00A30AE7 /* TypeParser.swift */,
 				4AF251CC1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt */,
 			);
 			path = GAME_MASTER;
@@ -112,6 +118,7 @@
 				4A2F9BD01F3C2A5900C6BF11 /* GameMasterScannerTests.swift */,
 				4A2F9BC91F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift */,
 				4A88CC431F3B61960008FB59 /* TemplateIDParserTests.swift */,
+				4A3407291F4DDA5E00A30AE7 /* TypeParserTests.swift */,
 			);
 			path = GAME_MASTER;
 			sourceTree = "<group>";
@@ -289,6 +296,7 @@
 				4A950D3D1F343D4400C7498F /* Type.swift in Sources */,
 				4A2F9BC71F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */,
 				4A2F9BD31F3CB09E00C6BF11 /* ItemTemplate.swift in Sources */,
+				4A3407271F4D0A8A00A30AE7 /* TypeParser.swift in Sources */,
 				4AF251CF1F3AC3DE00024E91 /* ItemTemplateParser.swift in Sources */,
 				4A950D3B1F343CB000C7498F /* Moves.swift in Sources */,
 				4A950D371F34069000C7498F /* Species.swift in Sources */,
@@ -308,6 +316,7 @@
 				4A88CC441F3B61960008FB59 /* TemplateIDParserTests.swift in Sources */,
 				4A2F9BCA1F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift in Sources */,
 				4A88CC411F3B61240008FB59 /* TemplateIDParser.swift in Sources */,
+				4A3407281F4D0A8A00A30AE7 /* TypeParser.swift in Sources */,
 				4A2F9BCE1F3C26C800C6BF11 /* Type.swift in Sources */,
 				4A2F9BCD1F3C26C500C6BF11 /* Pokemon.swift in Sources */,
 				4A2F9BCB1F3C26BD00C6BF11 /* Species.swift in Sources */,
@@ -316,6 +325,7 @@
 				4A88CC461F3B63E50008FB59 /* GameMasterScanner.swift in Sources */,
 				4A2F9BD41F3CB09E00C6BF11 /* ItemTemplate.swift in Sources */,
 				4A2F9BC81F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */,
+				4A34072A1F4DDA5E00A30AE7 /* TypeParserTests.swift in Sources */,
 				4A88CC451F3B63DF0008FB59 /* ItemTemplateParser.swift in Sources */,
 				4A2F9BD11F3C2A5900C6BF11 /* GameMasterScannerTests.swift in Sources */,
 				4A96C1981F3E0764006D52B9 /* ItemTemplateExamples.swift in Sources */,
