@@ -24,23 +24,41 @@ class PokemonTemplateParserTests: XCTestCase {
     
     func testParsingPokemon() {
         let template: ItemTemplate = [
-            "pokemon_settings" : .template([
-                "stats" : .template([
-                    "base_stamina" : .string("90"),
-                    "base_attack" : .string("118"),
-                    "base_defense" : .string("118")
-                    ])
+            "pokemon_settings": .template([
+                "pokemon_id": "BULBASAUR",
+                "type": "POKEMON_TYPE_GRASS",
+                "type_2": "POKEMON_TYPE_POISON",
+                "stats": .template([
+                    "base_stamina": "90",
+                    "base_attack": "118",
+                    "base_defense": "118"
+                    ]),
+                "pokedex_height_m": "0.7",
+                "pokedex_weight_kg": "6.9",
+                "height_std_dev": "0.0875",
+                "weight_std_dev": "0.8625",
+                "family_id": "FAMILY_BULBASAUR"
             ])
         ]
         let name = "BULBASAUR"
         let number = 1
         
-        let stats = Stats(hp: 90, attack: 118, defense: 118)
-        
-        let species = parser.parseSpecies(from: template, name: name, number: number)
-        XCTAssertEqual(species.name, "BULBASAUR")
-        XCTAssertEqual(species.number, 1)
-        XCTAssertEqual(species.baseStats, stats)
+        do {
+            let species = try parser.parseSpecies(from: template, name: name, number: number)
+            XCTAssertEqual(species.name, "BULBASAUR")
+            XCTAssertEqual(species.number, 1)
+            XCTAssertEqual(species.type.0, .grass)
+            XCTAssertEqual(species.type.1, .poison)
+            XCTAssertEqual(species.baseStats, Stats(hp: 90, attack: 118, defense: 118))
+            XCTAssertEqual(species.height.mean, 0.7)
+            XCTAssertEqual(species.height.standardDeviation, 0.0875)
+            XCTAssertEqual(species.weight.mean, 6.9)
+            XCTAssertEqual(species.weight.standardDeviation, 0.8625)
+            XCTAssertEqual(species.familyID, "FAMILY_BULBASAUR")
+        }
+        catch let error {
+            XCTFail("Parsing of species failed with error: \(error)")
+        }
     }
     
 }
