@@ -36,6 +36,8 @@
 		4A96C1961F3E061E006D52B9 /* GameMasterExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96C1951F3E061E006D52B9 /* GameMasterExamples.swift */; };
 		4A96C1981F3E0764006D52B9 /* ItemTemplateExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96C1971F3E0764006D52B9 /* ItemTemplateExamples.swift */; };
 		4AD3EA9A1F5BACE6008A77A5 /* ItemTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3EA991F5BACE6008A77A5 /* ItemTemplateTests.swift */; };
+		4AD3EA9C1F5BB241008A77A5 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3EA9B1F5BB241008A77A5 /* Size.swift */; };
+		4AD3EA9D1F5BB241008A77A5 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3EA9B1F5BB241008A77A5 /* Size.swift */; };
 		4AF251CB1F3AAA3900024E91 /* GameMasterScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6057CD1F37DE58005EF5A3 /* GameMasterScanner.swift */; };
 		4AF251CD1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AF251CC1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt */; };
 		4AF251CF1F3AC3DE00024E91 /* ItemTemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF251CE1F3AC3DE00024E91 /* ItemTemplateParser.swift */; };
@@ -75,6 +77,7 @@
 		4A96C1951F3E061E006D52B9 /* GameMasterExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMasterExamples.swift; sourceTree = "<group>"; };
 		4A96C1971F3E0764006D52B9 /* ItemTemplateExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTemplateExamples.swift; sourceTree = "<group>"; };
 		4AD3EA991F5BACE6008A77A5 /* ItemTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTemplateTests.swift; sourceTree = "<group>"; };
+		4AD3EA9B1F5BB241008A77A5 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		4AF251CC1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Pokemon GO GM 0.61.0.txt"; sourceTree = "<group>"; };
 		4AF251CE1F3AC3DE00024E91 /* ItemTemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTemplateParser.swift; sourceTree = "<group>"; };
 		4AF251D01F3AD07600024E91 /* TemplateIDParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateIDParser.swift; sourceTree = "<group>"; };
@@ -173,6 +176,7 @@
 				4A950D381F3408A500C7498F /* Stats.swift */,
 				4A950D3A1F343CB000C7498F /* Moves.swift */,
 				4A950D3C1F343D4400C7498F /* Type.swift */,
+				4AD3EA9B1F5BB241008A77A5 /* Size.swift */,
 			);
 			path = Pokemon;
 			sourceTree = "<group>";
@@ -300,6 +304,7 @@
 				4A2F9BC71F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */,
 				4A2F9BD31F3CB09E00C6BF11 /* ItemTemplate.swift in Sources */,
 				4A3407271F4D0A8A00A30AE7 /* TypeParser.swift in Sources */,
+				4AD3EA9C1F5BB241008A77A5 /* Size.swift in Sources */,
 				4AF251CF1F3AC3DE00024E91 /* ItemTemplateParser.swift in Sources */,
 				4A950D3B1F343CB000C7498F /* Moves.swift in Sources */,
 				4A950D371F34069000C7498F /* Species.swift in Sources */,
@@ -330,6 +335,7 @@
 				4A2F9BD41F3CB09E00C6BF11 /* ItemTemplate.swift in Sources */,
 				4A2F9BC81F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */,
 				4A34072A1F4DDA5E00A30AE7 /* TypeParserTests.swift in Sources */,
+				4AD3EA9D1F5BB241008A77A5 /* Size.swift in Sources */,
 				4A88CC451F3B63DF0008FB59 /* ItemTemplateParser.swift in Sources */,
 				4A2F9BD11F3C2A5900C6BF11 /* GameMasterScannerTests.swift in Sources */,
 				4A96C1981F3E0764006D52B9 /* ItemTemplateExamples.swift in Sources */,
