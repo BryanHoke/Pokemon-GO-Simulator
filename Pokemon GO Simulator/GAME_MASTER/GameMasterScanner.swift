@@ -49,15 +49,11 @@ public class GameMasterScanner {
 	
 	func scanItemTemplate(from head: ReadHead) -> ItemTemplate {
 		var template: ItemTemplate = [:]
-//        // Remember that we're starting from within a top-level template
-//        var bracketDepth = 1
 		while var line = head.nextLine() {
             line = String(line.drop(while: { $0 == " "}))
 			if line == "}" {
-//                bracketDepth -= 1
-//                if bracketDepth == 0 {
-                    break
-//                }
+                // The template has been fully scanned
+                break
 			}
 			else if My.keyValueRegex.firstMatch(in: line, options: [], range: NSMakeRange(0, line.count)) != nil {
 				let parts = line.components(separatedBy: ": ")

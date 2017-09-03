@@ -35,6 +35,7 @@
 		4A950D3D1F343D4400C7498F /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A950D3C1F343D4400C7498F /* Type.swift */; };
 		4A96C1961F3E061E006D52B9 /* GameMasterExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96C1951F3E061E006D52B9 /* GameMasterExamples.swift */; };
 		4A96C1981F3E0764006D52B9 /* ItemTemplateExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96C1971F3E0764006D52B9 /* ItemTemplateExamples.swift */; };
+		4AD3EA9A1F5BACE6008A77A5 /* ItemTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3EA991F5BACE6008A77A5 /* ItemTemplateTests.swift */; };
 		4AF251CB1F3AAA3900024E91 /* GameMasterScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6057CD1F37DE58005EF5A3 /* GameMasterScanner.swift */; };
 		4AF251CD1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AF251CC1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt */; };
 		4AF251CF1F3AC3DE00024E91 /* ItemTemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF251CE1F3AC3DE00024E91 /* ItemTemplateParser.swift */; };
@@ -73,6 +74,7 @@
 		4A950D3C1F343D4400C7498F /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		4A96C1951F3E061E006D52B9 /* GameMasterExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMasterExamples.swift; sourceTree = "<group>"; };
 		4A96C1971F3E0764006D52B9 /* ItemTemplateExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTemplateExamples.swift; sourceTree = "<group>"; };
+		4AD3EA991F5BACE6008A77A5 /* ItemTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTemplateTests.swift; sourceTree = "<group>"; };
 		4AF251CC1F3AAB4D00024E91 /* Pokemon GO GM 0.61.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Pokemon GO GM 0.61.0.txt"; sourceTree = "<group>"; };
 		4AF251CE1F3AC3DE00024E91 /* ItemTemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTemplateParser.swift; sourceTree = "<group>"; };
 		4AF251D01F3AD07600024E91 /* TemplateIDParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateIDParser.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				4A96C1991F3E0819006D52B9 /* Examples */,
 				4A2F9BD01F3C2A5900C6BF11 /* GameMasterScannerTests.swift */,
+				4AD3EA991F5BACE6008A77A5 /* ItemTemplateTests.swift */,
 				4A2F9BC91F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift */,
 				4A88CC431F3B61960008FB59 /* TemplateIDParserTests.swift */,
 				4A3407291F4DDA5E00A30AE7 /* TypeParserTests.swift */,
@@ -320,6 +323,7 @@
 				4A2F9BCE1F3C26C800C6BF11 /* Type.swift in Sources */,
 				4A2F9BCD1F3C26C500C6BF11 /* Pokemon.swift in Sources */,
 				4A2F9BCB1F3C26BD00C6BF11 /* Species.swift in Sources */,
+				4AD3EA9A1F5BACE6008A77A5 /* ItemTemplateTests.swift in Sources */,
 				4A96C1961F3E061E006D52B9 /* GameMasterExamples.swift in Sources */,
 				4A2F9BCF1F3C26CA00C6BF11 /* Moves.swift in Sources */,
 				4A88CC461F3B63E50008FB59 /* GameMasterScanner.swift in Sources */,
