@@ -85,6 +85,9 @@ public class PokémonTemplateParser {
         let weight = try parseDouble(withKey: weightKey, from: settingsTemplate)
         let heightStdDev = try parseDouble(withKey: heightStdDevKey, from: settingsTemplate)
         let weightStdDev = try parseDouble(withKey: weightStdDevKey, from: settingsTemplate)
+        let heightDistribution = SizeDistribution.Statistics(mean: height, standardDeviation: heightStdDev)
+        let weightDistribution = SizeDistribution.Statistics(mean: weight, standardDeviation: weightStdDev)
+        let sizeDistribution = SizeDistribution(height: heightDistribution, weight: weightDistribution)
         
         let typeParser = TypeParser()
         let typeString = try parseString(withKey: typeKey, from: settingsTemplate)
@@ -101,6 +104,6 @@ public class PokémonTemplateParser {
         
         let familyID = try parseString(withKey: familyIDKey, from: settingsTemplate)
         
-        return Species(name: name, number: number, type: (type, type2), baseStats: baseStats, height: (height, heightStdDev), weight: (weight, weightStdDev), familyID: familyID)
+        return Species(name: name, number: number, type: (type, type2), baseStats: baseStats, sizeDistribution: sizeDistribution, familyID: familyID)
     }
 }

@@ -23,11 +23,8 @@ public class Species {
     /// The species' base stats.
     public let baseStats: Stats
     
-    /// The mean and standard deviation of the species' height (in meters).
-    public let height: (mean: Double, standardDeviation: Double)
-    
-    /// The mean and standard deviation of the species' weight (in kilograms).
-    public let weight: (mean: Double, standardDeviation: Double)
+    /// The species` size distribution.
+    public let sizeDistribution: SizeDistribution
     
     /// The ID of the family to which the species belongs.
     public let familyID: String
@@ -41,13 +38,12 @@ public class Species {
     /// The names of the species into which this species can evolve.
     public var evolutionBranches: Set<String> = []
     
-    public init(name: String, number: Int, type: (Type, Type?), baseStats: Stats, height: (mean: Double, standardDeviation: Double), weight: (mean: Double, standardDeviation: Double), familyID: String) {
+    public init(name: String, number: Int, type: (Type, Type?), baseStats: Stats, sizeDistribution: SizeDistribution, familyID: String) {
         self.name = name
         self.number = number
         self.type = type
         self.baseStats = baseStats
-        self.height = height
-        self.weight = weight
+        self.sizeDistribution = sizeDistribution
         self.familyID = familyID
     }
 }

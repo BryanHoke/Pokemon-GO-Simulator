@@ -50,10 +50,10 @@ class PokemonTemplateParserTests: XCTestCase {
             XCTAssertEqual(species.type.0, .grass)
             XCTAssertEqual(species.type.1, .poison)
             XCTAssertEqual(species.baseStats, Stats(hp: 90, attack: 118, defense: 118))
-            XCTAssertEqual(species.height.mean, 0.7)
-            XCTAssertEqual(species.height.standardDeviation, 0.0875)
-            XCTAssertEqual(species.weight.mean, 6.9)
-            XCTAssertEqual(species.weight.standardDeviation, 0.8625)
+            XCTAssertEqual(species.sizeDistribution.height.mean, 0.7)
+            XCTAssertEqual(species.sizeDistribution.height.standardDeviation, 0.0875)
+            XCTAssertEqual(species.sizeDistribution.weight.mean, 6.9)
+            XCTAssertEqual(species.sizeDistribution.weight.standardDeviation, 0.8625)
             XCTAssertEqual(species.familyID, "FAMILY_BULBASAUR")
         }
         catch let error {
