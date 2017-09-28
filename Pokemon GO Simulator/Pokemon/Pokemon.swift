@@ -17,6 +17,9 @@ public struct Pokémon {
     /// The Pokémon's current stats.
     public private(set) var stats: Stats
     
+    /// The Pokémon's level.
+    public var level: Level
+    
     /// The Pokémon's current HP.
     public var currentHP: Int
     
