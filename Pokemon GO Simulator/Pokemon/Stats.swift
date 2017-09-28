@@ -23,3 +23,7 @@ public func ==(lhs: Stats, rhs: Stats) -> Bool {
         && lhs.attack == rhs.attack
         && lhs.defense == rhs.defense
 }
+
+public func +(lhs: Stats, rhs: Stats) -> Stats {
+    return Stats(hp: lhs.hp + rhs.hp, attack: lhs.attack + rhs.attack, defense: lhs.defense + rhs.defense)
+}
