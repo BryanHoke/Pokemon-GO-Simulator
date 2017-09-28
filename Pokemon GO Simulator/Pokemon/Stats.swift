@@ -8,12 +8,16 @@
 
 import Foundation
 
+/// A Pokémon's stats.
 public struct Stats : Equatable {
     
+    /// The HP stat.
     public var hp: Int
     
+    /// The attack stat.
     public var attack: Int
     
+    /// The defense stat.
     public var defense: Int
     
 }
