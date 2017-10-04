@@ -9,6 +9,8 @@
 import Foundation
 
 /// A Pokémon's stats.
+///
+/// This type can be used to represent both base stats and individual values (IVs).
 public struct Stats : Hashable {
     
     /// The HP stat.
@@ -19,6 +21,31 @@ public struct Stats : Hashable {
     
     /// The defense stat.
     public var defense: Int
+    
+    /// The IVs with the maximum value for every stat.
+    public static let maxIVs = Stats(hp: 15, attack: 15, defense: 15)
+    
+    /// The IVs with a value of `0` for every stat.
+    public static let zeroIVs = Stats(hp: 0, attack: 0, defense: 0)
+    
+    /// The set of all IVs.
+    public static let allIVs: Set<Stats> = ivs(in: 0...15)
+    
+    /// The set of all IVs that can be found on Pokémon hatched from eggs.
+    public static let eggIVs: Set<Stats> = ivs(in: 10...15)
+    
+    /// Returns the set of all IVs in the specified value range.
+    public static func ivs(in range: CountableClosedRange<Int>) -> Set<Stats> {
+        var ivs = Set<Stats>()
+        for sta in range {
+            for atk in range {
+                for def in range {
+                    ivs.insert(Stats(hp: sta, attack: atk, defense: def))
+                }
+            }
+        }
+        return ivs
+    }
     
     public var hashValue: Int {
         let prime = 31
