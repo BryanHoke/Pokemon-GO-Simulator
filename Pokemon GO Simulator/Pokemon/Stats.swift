@@ -9,7 +9,7 @@
 import Foundation
 
 /// A Pokémon's stats.
-public struct Stats : Equatable {
+public struct Stats : Hashable {
     
     /// The HP stat.
     public var hp: Int
@@ -20,6 +20,10 @@ public struct Stats : Equatable {
     /// The defense stat.
     public var defense: Int
     
+    public var hashValue: Int {
+        let prime = 31
+        return hp * Int(pow(Double(prime), 2)) + attack * prime + defense
+    }
 }
 
 public func ==(lhs: Stats, rhs: Stats) -> Bool {
