@@ -15,7 +15,12 @@ public struct Level {
     public var ordinal: Int
     
     /// Whether the Pokémon has been powered up at this level.
-    public var isPoweredUp: Bool
+    public var isPoweredUp: Bool = false
+    
+    public init(ordinal: Int, isPoweredUp: Bool = false) {
+        self.ordinal = ordinal
+        self.isPoweredUp = isPoweredUp
+    }
     
     /// Returns the level achieved by powering-up this level once.
     public var poweredUp: Level {
@@ -33,5 +38,12 @@ public struct Level {
         else {
             isPoweredUp = true
         }
+    }
+}
+
+extension Level : ExpressibleByIntegerLiteral {
+    
+    public init(integerLiteral value: Int) {
+        ordinal = value
     }
 }
