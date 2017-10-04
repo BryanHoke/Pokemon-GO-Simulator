@@ -16,4 +16,22 @@ public struct Level {
     
     /// Whether the Pokémon has been powered up at this level.
     public var isPoweredUp: Bool
+    
+    /// Returns the level achieved by powering-up this level once.
+    public var poweredUp: Level {
+        var nextLevel = self
+        nextLevel.powerUp()
+        return nextLevel
+    }
+    
+    /// Powers-up this level once.
+    public mutating func powerUp() {
+        if isPoweredUp {
+            isPoweredUp = false
+            ordinal += 1
+        }
+        else {
+            isPoweredUp = true
+        }
+    }
 }
