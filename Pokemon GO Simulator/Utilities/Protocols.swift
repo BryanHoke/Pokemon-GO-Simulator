@@ -26,3 +26,28 @@ protocol CPCalculating {
     /// Calculates the CP of a `CPCalculable` instance.
     func calculateCP(of subject: CPCalculable) -> Int
 }
+
+// MARK: - Calculating IVs
+
+/// A type for which individual values (IVs) can be calculated.
+protocol IVCalculable {
+    
+    /// The base stats used for calculating IVs.
+    var baseStats: Stats { get }
+    
+    /// The CP used for calculating IVs.
+    var cp: Int { get }
+    
+    /// The HP used for calculating IVs.
+    var hp: Int { get }
+    
+    /// The `Level` used for calcuating IVs.
+    var level: Level { get }
+}
+
+/// A type which can calculate the individual values (IVs) of `IVCalculable` instances.
+protocol IVCalculating {
+    
+    /// Returns the set of all possible IVs for the specified `IVCalculable` instance.
+    func calculateIVs(of subject: IVCalculable) -> Set<Stats>
+}
