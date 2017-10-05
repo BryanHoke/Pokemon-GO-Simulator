@@ -16,6 +16,7 @@
 		4A1CBF8D1F7DE66500E828DB /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CBF8B1F7DE66500E828DB /* Protocols.swift */; };
 		4A1CBF8F1F7DEAF600E828DB /* CPCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CBF8E1F7DEAF600E828DB /* CPCalculator.swift */; };
 		4A1CBF901F7DEAF600E828DB /* CPCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CBF8E1F7DEAF600E828DB /* CPCalculator.swift */; };
+		4A1CBF931F7E047A00E828DB /* CPCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CBF921F7E047A00E828DB /* CPCalculatorTests.swift */; };
 		4A2F9BC71F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BC61F3C1A9C00C6BF11 /* PokemonTemplateParser.swift */; };
 		4A2F9BC81F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BC61F3C1A9C00C6BF11 /* PokemonTemplateParser.swift */; };
 		4A2F9BCA1F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BC91F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift */; };
@@ -70,6 +71,7 @@
 		4A1CBF841F7CB2D200E828DB /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		4A1CBF8B1F7DE66500E828DB /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		4A1CBF8E1F7DEAF600E828DB /* CPCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCalculator.swift; sourceTree = "<group>"; };
+		4A1CBF921F7E047A00E828DB /* CPCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCalculatorTests.swift; sourceTree = "<group>"; };
 		4A2F9BC61F3C1A9C00C6BF11 /* PokemonTemplateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTemplateParser.swift; sourceTree = "<group>"; };
 		4A2F9BC91F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTemplateParserTests.swift; sourceTree = "<group>"; };
 		4A2F9BD01F3C2A5900C6BF11 /* GameMasterScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMasterScannerTests.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		4A1CBF911F7E045000E828DB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4A1CBF921F7E047A00E828DB /* CPCalculatorTests.swift */,
 				4A1C21AF1F7EBD3F003F441D /* CPMultipliersTests.swift */,
 			);
 			path = Utilities;
@@ -371,6 +374,7 @@
 			files = (
 				4A950D281F33F1C000C7498F /* Pokemon_GO_SimulatorTests.swift in Sources */,
 				4A2F9BCC1F3C26C200C6BF11 /* Stats.swift in Sources */,
+				4A1CBF931F7E047A00E828DB /* CPCalculatorTests.swift in Sources */,
 				4A88CC441F3B61960008FB59 /* TemplateIDParserTests.swift in Sources */,
 				4A1CBF8D1F7DE66500E828DB /* Protocols.swift in Sources */,
 				4A2F9BCA1F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift in Sources */,
