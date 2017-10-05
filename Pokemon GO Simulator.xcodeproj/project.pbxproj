@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1C21AE1F7EBBED003F441D /* CPMultipliers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */; };
+		4A1C21B11F7EBDE5003F441D /* CPMultipliers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */; };
 		4A1CBF851F7CB2D200E828DB /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CBF841F7CB2D200E828DB /* Level.swift */; };
 		4A1CBF861F7CB2D200E828DB /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CBF841F7CB2D200E828DB /* Level.swift */; };
 		4A2F9BC71F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F9BC61F3C1A9C00C6BF11 /* PokemonTemplateParser.swift */; };
@@ -58,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMultipliers.swift; sourceTree = "<group>"; };
 		4A1CBF841F7CB2D200E828DB /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		4A2F9BC61F3C1A9C00C6BF11 /* PokemonTemplateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTemplateParser.swift; sourceTree = "<group>"; };
 		4A2F9BC91F3C24EC00C6BF11 /* PokemonTemplateParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTemplateParserTests.swift; sourceTree = "<group>"; };
@@ -107,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A1CBF8A1F7DE5CD00E828DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4A6057CC1F37DD7B005EF5A3 /* GAME_MASTER */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +169,7 @@
 				4A950D1C1F33F1C000C7498F /* Pokemon_GO_Simulator.h */,
 				4A6057CC1F37DD7B005EF5A3 /* GAME_MASTER */,
 				4A950D331F34051000C7498F /* Pokemon */,
+				4A1CBF8A1F7DE5CD00E828DB /* Utilities */,
 				4A950D1D1F33F1C000C7498F /* Info.plist */,
 			);
 			path = "Pokemon GO Simulator";
@@ -324,6 +336,7 @@
 				4AF251CF1F3AC3DE00024E91 /* ItemTemplateParser.swift in Sources */,
 				4A950D3B1F343CB000C7498F /* Moves.swift in Sources */,
 				4A950D371F34069000C7498F /* Species.swift in Sources */,
+				4A1C21AE1F7EBBED003F441D /* CPMultipliers.swift in Sources */,
 				4A950D391F3408A500C7498F /* Stats.swift in Sources */,
 				4AF251CB1F3AAA3900024E91 /* GameMasterScanner.swift in Sources */,
 				4A950D351F34060600C7498F /* Pokemon.swift in Sources */,
@@ -353,6 +366,7 @@
 				4A2F9BC81F3C1A9C00C6BF11 /* PokemonTemplateParser.swift in Sources */,
 				4A1CBF861F7CB2D200E828DB /* Level.swift in Sources */,
 				4A34072A1F4DDA5E00A30AE7 /* TypeParserTests.swift in Sources */,
+				4A1C21B11F7EBDE5003F441D /* CPMultipliers.swift in Sources */,
 				4AD3EA9D1F5BB241008A77A5 /* Size.swift in Sources */,
 				4A88CC451F3B63DF0008FB59 /* ItemTemplateParser.swift in Sources */,
 				4A2F9BD11F3C2A5900C6BF11 /* GameMasterScannerTests.swift in Sources */,
