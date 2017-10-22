@@ -8,11 +8,22 @@
 
 import Foundation
 
+/// A fast move that also builds energy.
 public struct FastMove : Hashable {
+    
+    /// The move's name
     public let name: String
+    
+    /// The move's power.
     public var power: Int
+    
+    /// The move's type.
     public var type: Type
+    
+    /// The amount of time it takes for the move to complete.
     public var cooldown: TimeInterval
+    
+    /// The amount of energy gained from using the move.
     public var energyGain: Int
     
     public var hashValue: Int {
@@ -28,11 +39,22 @@ public func ==(lhs: FastMove, rhs: FastMove) -> Bool {
     && lhs.energyGain == rhs.energyGain
 }
 
+/// A move that requires the consumption of energy to use.
 public struct ChargedMove : Hashable {
+    
+    /// The move's name.
     public let name: String
+    
+    /// The move's power.
     public var power: Int
+    
+    /// The move's type.
     public var type: Type
+    
+    /// The amount of time it takes for the move to complete.
     public var cooldown: TimeInterval
+    
+    /// The amount of energy it costs to use the move.
     public var energyCost: Int
     
     public var hashValue: Int {
