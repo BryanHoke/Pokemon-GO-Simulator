@@ -15,6 +15,7 @@ class IVCalculatorTests: XCTestCase {
         var cp: Int
         var hp: Int
         var level: Level
+        var appraisal: Appraisal?
     }
     
     func testCalculatingIVs() {
@@ -22,9 +23,16 @@ class IVCalculatorTests: XCTestCase {
         
         let alakazamBaseStats = Stats(hp: 110, attack: 271, defense: 194)
         
+        var perfectAlakazam = MockIVCalculable(baseStats: alakazamBaseStats, cp: 2845, hp: 98, level: 39, appraisal: nil)
         do {
-            let alakazam = MockIVCalculable(baseStats: alakazamBaseStats, cp: 2845, hp: 98, level: 39)
-            let ivs = calculator.calculateIVs(of: alakazam)
+            let ivs = calculator.calculateIVs(of: perfectAlakazam)
+            XCTAssertEqual(ivs.count, 1)
+            XCTAssert(ivs.contains(Stats.maxIVs))
+        }
+        
+        perfectAlakazam.appraisal = .best
+        do {
+            let ivs = calculator.calculateIVs(of: perfectAlakazam)
             XCTAssertEqual(ivs.count, 1)
             XCTAssert(ivs.contains(Stats.maxIVs))
         }

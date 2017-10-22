@@ -43,6 +43,9 @@ protocol IVCalculable {
     
     /// The `Level` used for calcuating IVs.
     var level: Level { get }
+    
+    /// The stat `Appraisal` used for calculating IVs.
+    var appraisal: Appraisal? { get }
 }
 
 /// A type which can calculate the individual values (IVs) of `IVCalculable` instances.
