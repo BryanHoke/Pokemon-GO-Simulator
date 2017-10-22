@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0BD8CF1F85E80D0009BC2E /* IVCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD8CE1F85E80D0009BC2E /* IVCalculator.swift */; };
+		4A0BD8D01F85E80D0009BC2E /* IVCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD8CE1F85E80D0009BC2E /* IVCalculator.swift */; };
+		4A0BD8D21F85EDA10009BC2E /* IVCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD8D11F85EDA10009BC2E /* IVCalculatorTests.swift */; };
 		4A1C21AE1F7EBBED003F441D /* CPMultipliers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */; };
 		4A1C21B01F7EBD3F003F441D /* CPMultipliersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C21AF1F7EBD3F003F441D /* CPMultipliersTests.swift */; };
 		4A1C21B11F7EBDE5003F441D /* CPMultipliers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */; };
@@ -66,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0BD8CE1F85E80D0009BC2E /* IVCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVCalculator.swift; sourceTree = "<group>"; };
+		4A0BD8D11F85EDA10009BC2E /* IVCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVCalculatorTests.swift; sourceTree = "<group>"; };
 		4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMultipliers.swift; sourceTree = "<group>"; };
 		4A1C21AF1F7EBD3F003F441D /* CPMultipliersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMultipliersTests.swift; sourceTree = "<group>"; };
 		4A1CBF841F7CB2D200E828DB /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 				4A1CBF8B1F7DE66500E828DB /* Protocols.swift */,
 				4A1CBF8E1F7DEAF600E828DB /* CPCalculator.swift */,
 				4A1C21AD1F7EBBED003F441D /* CPMultipliers.swift */,
+				4A0BD8CE1F85E80D0009BC2E /* IVCalculator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 			children = (
 				4A1CBF921F7E047A00E828DB /* CPCalculatorTests.swift */,
 				4A1C21AF1F7EBD3F003F441D /* CPMultipliersTests.swift */,
+				4A0BD8D11F85EDA10009BC2E /* IVCalculatorTests.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -357,6 +364,7 @@
 				4AD3EA9C1F5BB241008A77A5 /* Size.swift in Sources */,
 				4AF251CF1F3AC3DE00024E91 /* ItemTemplateParser.swift in Sources */,
 				4A950D3B1F343CB000C7498F /* Moves.swift in Sources */,
+				4A0BD8CF1F85E80D0009BC2E /* IVCalculator.swift in Sources */,
 				4A950D371F34069000C7498F /* Species.swift in Sources */,
 				4A1CBF8F1F7DEAF600E828DB /* CPCalculator.swift in Sources */,
 				4A1CBF8C1F7DE66500E828DB /* Protocols.swift in Sources */,
@@ -374,6 +382,7 @@
 			files = (
 				4A950D281F33F1C000C7498F /* Pokemon_GO_SimulatorTests.swift in Sources */,
 				4A2F9BCC1F3C26C200C6BF11 /* Stats.swift in Sources */,
+				4A0BD8D21F85EDA10009BC2E /* IVCalculatorTests.swift in Sources */,
 				4A1CBF931F7E047A00E828DB /* CPCalculatorTests.swift in Sources */,
 				4A88CC441F3B61960008FB59 /* TemplateIDParserTests.swift in Sources */,
 				4A1CBF8D1F7DE66500E828DB /* Protocols.swift in Sources */,
@@ -382,6 +391,7 @@
 				4A3407281F4D0A8A00A30AE7 /* TypeParser.swift in Sources */,
 				4A2F9BCE1F3C26C800C6BF11 /* Type.swift in Sources */,
 				4A2F9BCD1F3C26C500C6BF11 /* Pokemon.swift in Sources */,
+				4A0BD8D01F85E80D0009BC2E /* IVCalculator.swift in Sources */,
 				4A2F9BCB1F3C26BD00C6BF11 /* Species.swift in Sources */,
 				4A1CBF901F7DEAF600E828DB /* CPCalculator.swift in Sources */,
 				4A1C21B01F7EBD3F003F441D /* CPMultipliersTests.swift in Sources */,
