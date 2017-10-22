@@ -54,3 +54,12 @@ protocol IVCalculating {
     /// Returns the set of all possible IVs for the specified `IVCalculable` instance.
     func calculateIVs(of subject: IVCalculable) -> Set<Stats>
 }
+
+// MARK: - Appraising stats
+
+/// A type that can appraise `Stats`.
+public protocol StatAppraising {
+    
+    /// Returns the determined `Appraisal` of the specified `Stats`.
+    func appraise(_ stats: Stats) -> Appraisal
+}
