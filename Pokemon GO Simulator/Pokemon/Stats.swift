@@ -21,6 +21,9 @@ public struct Stats : Hashable {
         case attack
         /// The defense category.
         case defense
+        
+        /// The set of all stat categories.
+        public static let all: Set<Category> = [.hp, .attack, .defense]
     }
     
     /// The HP stat.
