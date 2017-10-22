@@ -13,7 +13,14 @@ public struct Appraisal {
     
     /// A rating category given by the `Appraisal`.
     public enum Grade {
-        case a, b, c, d
+        /// The best rating.
+        case a
+        /// The second-best rating.
+        case b
+        /// The third-best rating.
+        case c
+        /// The worst rating.
+        case d
     }
     
     /// The overall rating of the Pokémon's stats.
@@ -27,4 +34,7 @@ public struct Appraisal {
     
     /// The rating of the Pokémon's best stat(s).
     public var stat: Grade
+    
+    /// The best `Appraisal` that can be given.
+    public static let best = Appraisal(overall: .a, best: [.hp, .attack, .defense], stat: .a)
 }
