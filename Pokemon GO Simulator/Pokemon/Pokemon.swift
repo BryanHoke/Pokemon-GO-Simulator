@@ -23,11 +23,8 @@ public struct Pokémon {
     /// The Pokémon's current HP.
     public var currentHP: Int
     
-    /// The Pokémon's fast move.
-    public var fastMove: FastMove
-    
-    /// The Pokémon's charged move.
-    public var chargedMove: ChargedMove
+    /// The Pokémon's moveset.
+    public var moveset: Moveset
     
     /// The Pokémon's nickname.
     public var nickname: String?
