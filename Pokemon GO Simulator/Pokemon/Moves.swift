@@ -47,3 +47,13 @@ public func ==(lhs: ChargedMove, rhs: ChargedMove) -> Bool {
         && lhs.cooldown == rhs.cooldown
         && lhs.energyCost == rhs.energyCost
 }
+
+/// A Pokémon moveset.
+public struct Moveset {
+    
+    /// The fast move.
+    public var fast: FastMove
+    
+    /// The charged move.
+    public var charged: ChargedMove
+}
