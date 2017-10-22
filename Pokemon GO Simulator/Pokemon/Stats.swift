@@ -13,6 +13,16 @@ import Foundation
 /// This type can be used to represent both base stats and individual values (IVs).
 public struct Stats : Hashable {
     
+    /// An individual stat category.
+    public enum Category : String {
+        /// The HP category.
+        case hp
+        /// The attack category.
+        case attack
+        /// The defense category.
+        case defense
+    }
+    
     /// The HP stat.
     public var hp: Int
     
@@ -45,6 +55,24 @@ public struct Stats : Hashable {
             }
         }
         return ivs
+    }
+    
+    /// Accesses the stat value of the specified `Category`.
+    public subscript(category: Category) -> Int {
+        get {
+            switch category {
+            case .hp: return hp
+            case .attack: return attack
+            case .defense: return defense
+            }
+        }
+        set {
+            switch category {
+            case .hp: hp = newValue
+            case .attack: attack = newValue
+            case .defense: defense = newValue
+            }
+        }
     }
     
     public var hashValue: Int {
